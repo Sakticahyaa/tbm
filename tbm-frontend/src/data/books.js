@@ -1,0 +1,122 @@
+export const books = [
+  {
+    id: 1,
+    judul: 'Petualangan Adi dan Adam',
+    penulis: 'Riki Pratama',
+    aliran: 'Fiksi',
+    jenis: 'Buku Pelajaran',
+    lokasi: 'TBM Kantor Kelurahan',
+    sinopsis: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    penerbit: 'Bugel Publishing',
+    ilustrator: 'Ritia Shafa',
+    isbn: '891-343-125-1'
+  },
+  {
+    id: 2,
+    judul: 'Lima Sekawan Kendaraan',
+    penulis: 'Roihan Afifi',
+    aliran: 'Fiksi',
+    jenis: 'Novel',
+    lokasi: 'TBM Kantor Kelurahan',
+    sinopsis: 'Cerita petualangan lima sahabat yang menjelajahi dunia dengan berbagai kendaraan unik. Mereka menghadapi tantangan dan rintangan yang menguji persahabatan dan keberanian mereka.',
+    penerbit: 'Mizan Publishing',
+    ilustrator: 'Andi Wijaya',
+    isbn: '978-602-291-123-4'
+  },
+  {
+    id: 3,
+    judul: 'Ollie Si Anjing Super',
+    penulis: 'Aphrodity Jazzy',
+    aliran: 'Nonfiksi',
+    jenis: 'Novel',
+    lokasi: 'TBM RW 02',
+    sinopsis: 'Kisah inspiratif tentang seekor anjing yang memiliki kemampuan luar biasa dalam membantu manusia. Ollie mengajarkan nilai-nilai kesetiaan, keberanian, dan kasih sayang.',
+    penerbit: 'Gramedia Pustaka',
+    ilustrator: 'Sari Melati',
+    isbn: '978-979-22-1234-5'
+  },
+  {
+    id: 4,
+    judul: 'Belajar Matematika Dasar',
+    penulis: 'Dr. Susanto',
+    aliran: 'Nonfiksi',
+    jenis: 'Buku Pelajaran',
+    lokasi: 'TBM RW 01',
+    sinopsis: 'Panduan lengkap untuk mempelajari konsep-konsep dasar matematika dengan pendekatan yang mudah dipahami. Dilengkapi dengan contoh soal dan latihan yang menarik.',
+    penerbit: 'Erlangga',
+    ilustrator: 'Tim Kreatif Erlangga',
+    isbn: '978-602-298-456-7'
+  },
+  {
+    id: 5,
+    judul: 'Cerita Dongeng Nusantara',
+    penulis: 'Maria Sari',
+    aliran: 'Fiksi',
+    jenis: 'Buku Anak-Anak',
+    lokasi: 'TBM RW 03',
+    sinopsis: 'Kumpulan dongeng tradisional dari berbagai daerah di Indonesia yang dikemas dengan bahasa modern dan ilustrasi menarik untuk anak-anak.',
+    penerbit: 'Balai Pustaka',
+    ilustrator: 'Dewi Kartika',
+    isbn: '978-979-407-789-0'
+  },
+  {
+    id: 6,
+    judul: 'Panduan Kesehatan Keluarga',
+    penulis: 'Dr. Ahmad Nurhadi',
+    aliran: 'Nonfiksi',
+    jenis: 'Buku Umum',
+    lokasi: 'TBM Pendopo Kelurahan',
+    sinopsis: 'Panduan praktis untuk menjaga kesehatan keluarga dengan tips pencegahan penyakit, pola hidup sehat, dan pertolongan pertama yang mudah dipraktikkan di rumah.',
+    penerbit: 'Kompas Gramedia',
+    ilustrator: 'Tim Medis',
+    isbn: '978-602-03-1234-8'
+  },
+  {
+    id: 7,
+    judul: 'Sejarah Indonesia Modern',
+    penulis: 'Prof. Bambang Sutrisno',
+    aliran: 'Nonfiksi',
+    jenis: 'Buku Pelajaran',
+    lokasi: 'TBM RW 04',
+    sinopsis: 'Kajian mendalam tentang perkembangan Indonesia dari masa kolonial hingga era reformasi dengan analisis yang objektif dan komprehensif.',
+    penerbit: 'UI Press',
+    ilustrator: 'Tim Sejarah UI',
+    isbn: '978-979-456-123-9'
+  },
+  {
+    id: 8,
+    judul: 'Kumpulan Puisi Anak',
+    penulis: 'Taufik Ismail',
+    aliran: 'Fiksi',
+    jenis: 'Buku Anak-Anak',
+    lokasi: 'TBM RW 05',
+    sinopsis: 'Koleksi puisi-puisi indah yang ditulis khusus untuk anak-anak dengan tema-tema yang dekat dengan kehidupan sehari-hari mereka.',
+    penerbit: 'Horison',
+    ilustrator: 'Nia Dinata',
+    isbn: '978-602-456-789-1'
+  },
+  {
+    id: 9,
+    judul: 'Teknologi Masa Depan',
+    penulis: 'Dr. Ir. Habibie Wijaya',
+    aliran: 'Nonfiksi',
+    jenis: 'Buku Umum',
+    lokasi: 'TBM RW 06',
+    sinopsis: 'Eksplorasi tentang perkembangan teknologi terkini dan prediksi teknologi masa depan yang akan mengubah cara hidup manusia.',
+    penerbit: 'ITB Press',
+    ilustrator: 'Tim Teknologi ITB',
+    isbn: '978-602-123-456-2'
+  },
+  {
+    id: 10,
+    judul: 'Petualangan di Hutan Amazon',
+    penulis: 'Sarah Adventure',
+    aliran: 'Fiksi',
+    jenis: 'Novel',
+    lokasi: 'TBM RW 07',
+    sinopsis: 'Kisah menegangkan tentang ekspedisi ke hutan Amazon yang penuh dengan misteri, bahaya, dan penemuan yang mengubah hidup para petualang.',
+    penerbit: 'Adventure Books',
+    ilustrator: 'Marco Silva',
+    isbn: '978-602-789-123-3'
+  }
+];
