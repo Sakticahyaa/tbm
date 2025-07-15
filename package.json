@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "lucide-react": "^0.525.0"
+    "@supabase/supabase-js": "^2.50.5",
+    "lucide-react": "^0.525.0",
+    "react-router-dom": "^7.6.3"
   }
 }
