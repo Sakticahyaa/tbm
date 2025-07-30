@@ -185,7 +185,7 @@ const BookListPage = () => {
           <div className="bg-white rounded-lg shadow-lg border border-amber-200 overflow-hidden">
             <div className="overflow-x-auto">
               <table className="w-full min-w-[800px]">
-                <thead className="bg-gradient-to-r from-amber-100 to-orange-100">
+                <thead className="bg-[#E6E6E6]">
                   <tr>
                     <th 
                       className="px-6 py-4 text-left text-sm font-semibold text-amber-900 cursor-pointer hover:bg-amber-200 transition-colors"
@@ -242,7 +242,9 @@ const BookListPage = () => {
                     <tr>
                       <td colSpan={6} className="px-6 py-12 text-center">
                         <div className="text-amber-600">
-                          <div className="text-6xl mb-4">📚</div>
+                          <div className="text-6xl mb-4 flex justify-center">
+                            <img src='public/img/sad.png' alt="sad" className='w-'></img>
+                          </div>
                           <p className="text-lg font-medium text-amber-800">Tidak ada data</p>
                           <p className="text-amber-600">Tidak ada buku yang ditemukan dengan kriteria pencarian ini.</p>
                         </div>

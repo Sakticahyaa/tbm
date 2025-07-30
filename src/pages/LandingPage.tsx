@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { ChevronDown, BookOpen, Users, Star } from 'lucide-react';
-import { supabase } from '../lib/supabase';
-import Footer from '../components/Footer';
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { ChevronDown, BookOpen, Users, Star } from "lucide-react";
+import { supabase } from "../lib/supabase";
+import Footer from "../components/Footer";
 
 const LandingPage = () => {
   const [bookCount, setBookCount] = useState(0);
@@ -11,22 +11,22 @@ const LandingPage = () => {
   useEffect(() => {
     const fetchBookCount = async () => {
       const { count } = await supabase
-        .from('buku')
-        .select('*', { count: 'exact', head: true });
+        .from("buku")
+        .select("*", { count: "exact", head: true });
       setBookCount(count || 0);
     };
 
     fetchBookCount();
 
     const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -40,9 +40,12 @@ const LandingPage = () => {
       </div>
 
       {/* Hero Section */}
-      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section
+        id="hero"
+        className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      >
         {/* Parallax Background */}
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: `url('https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop')`,
@@ -57,22 +60,21 @@ const LandingPage = () => {
             Taman Baca Masyarakat
           </h1>
           <button
-            onClick={() => scrollToSection('cta')}
+            onClick={() => scrollToSection("cta")}
             className="group bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
           >
             <span className="group-hover:hidden">Mulai Baca Sekarang</span>
             <span className="hidden group-hover:inline">Baca Sekarang</span>
           </button>
-
-          {/* Floating Scroll Indicator */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <button
-              onClick={() => scrollToSection('about')}
-              className="text-white/80 hover:text-white transition-colors"
-            >
-              <ChevronDown className="h-8 w-8" />
-            </button>
-          </div>
+        </div>
+        {/* Floating Scroll Indicator */}
+        <div className="absolute bottom-8 transform -translate-x-1/2 animate-bounce">
+          <button
+            onClick={() => scrollToSection("about")}
+            className="text-white/80 hover:text-white transition-colors"
+          >
+            <ChevronDown className="h-8 w-8" />
+          </button>
         </div>
       </section>
 
@@ -87,11 +89,14 @@ const LandingPage = () => {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-amber-900 mb-8">
             Tingkatkan literasi Indonesia
           </h2>
-          <p className="text-lg text-amber-800 leading-relaxed max-w-3xl mx-auto">
-            Flofa adalah platform pendataan penyakit pada hewan dan tanaman di Kelurahan Bugel, Salatiga. 
-            Selain pendataan penyakit, Flofa juga memberikan informasi lain seperti gejala dan cara penanganannya. 
-            Flofa membantu digitalisasi proses pendataan dengan mudah dan cepat. Selain sebagai pendataan, 
-            Flofa juga berperan sebagai pemantauan kondisi hewan dan tanaman di Kelurahan Bugel.
+          <p className="text-lg text-amber-800 leading-relaxed mx-auto">
+              Taman Baca Masyarakat (TBM) di Kelurahan Bugel, Salatiga, merupakan salah satu bentuk
+              inisiatif dalam meningkatkan literasi masyarakat setempat. TBM ini biasanya berlokasi
+              secara strategis di lingkungan permukiman warga. Setiap RW (Rukun Warga) di Kelurahan
+              Bugel masing-masing memiliki satu TBM. TBM ini menyediakan beragam bahan bacaan seperti
+              buku pendidikan, anak-anak, fiksi, pengetahuan umum, dan sebagainya. Setiap TBM dikelola
+              oleh relawan atau tokoh masyarakat di masing-masing RW. Seluruh lapisan masyarakat
+              memiliki kesempatan untuk mengakses dan meminjam buku-buku yang tersedia di TBM tersebut.
           </p>
         </div>
 
