@@ -146,17 +146,6 @@ const BookListPage = () => {
             
             {/* Filters */}
             <div className="flex flex-col lg:flex-row gap-4 mb-6">
-              <div className="relative flex-1">
-                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-amber-500" />
-                <input
-                  type="text"
-                  placeholder="Cari buku..."
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full pl-10 pr-4 py-2 bg-white border border-amber-200 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent"
-                />
-              </div>
-              
               <select
                 value={aliranFilter}
                 onChange={(e) => setAliranFilter(e.target.value)}
@@ -178,6 +167,17 @@ const BookListPage = () => {
                   <option key={jenis} value={jenis}>{jenis}</option>
                 ))}
               </select>
+
+              <div className="relative flex-1">
+                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-amber-500" />
+                <input
+                  type="text"
+                  placeholder="Cari buku..."
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className="w-full pl-10 pr-4 py-2 bg-white border border-amber-200 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent"
+                />
+              </div>
             </div>
           </div>
 

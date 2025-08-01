@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { ArrowLeft, User, BookOpen, MapPin, Building, Palette, Barcode } from 'lucide-react';
+import { ArrowLeft, User, BookOpen, MapPin, Building, Palette, Barcode, Slack } from 'lucide-react';
 import { Book } from '../lib/supabase';
 
 const BookDetailPage = () => {
@@ -16,7 +16,7 @@ const BookDetailPage = () => {
           <p className="text-lg font-medium text-amber-800 mb-4">Buku tidak ditemukan</p>
           <button
             onClick={() => navigate('/daftar-buku')}
-            className="bg-amber-600 hover:bg-amber-700 text-white px-6 py-2 rounded-lg transition-colors"
+            className="bg-A1-Forest hover:bg-A1-Ash text-white hover:text-A1-Charcoal px-6 py-2 rounded-lg transition-colors"
           >
             Kembali ke Daftar Buku
           </button>
@@ -38,7 +38,7 @@ const BookDetailPage = () => {
         {/* Back Button */}
         <button
           onClick={() => navigate('/daftar-buku')}
-          className="flex items-center space-x-2 mb-6 text-amber-700 hover:text-amber-900 transition-colors bg-white px-4 py-2 rounded-lg shadow-md border border-amber-200 hover:bg-amber-50"
+          className="flex items-center space-x-2 mb-6 bg-A1-Forest hover:bg-A1-Cream text-white hover:text-A1-Forest transition-colors px-4 py-2 rounded-lg shadow-md border border-A1-Cream hover:border-A1-Forest"
         >
           <ArrowLeft className="h-5 w-5" />
           <span>Kembali ke daftar buku</span>
@@ -66,7 +66,7 @@ const BookDetailPage = () => {
                 <h2 className="text-xl font-semibold text-amber-900">Sinopsis</h2>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                {book.sinopsis_buku || 'Sinopsis tidak tersedia.'}
+                {book.sinopsis_buku || '-'}
               </p>
             </div>
 
@@ -75,7 +75,7 @@ const BookDetailPage = () => {
               {/* Aliran Buku */}
               <div className="bg-amber-50 p-4 rounded-lg border border-amber-200">
                 <div className="flex items-center mb-2">
-                  <Palette className="h-5 w-5 text-amber-600 mr-2" />
+                  <Slack className="h-5 w-5 text-amber-600 mr-2" />
                   <h3 className="font-semibold text-amber-900">Aliran Buku</h3>
                 </div>
                 <p className="text-gray-700">{book.aliran_buku}</p>
@@ -87,7 +87,7 @@ const BookDetailPage = () => {
                   <Building className="h-5 w-5 text-orange-600 mr-2" />
                   <h3 className="font-semibold text-orange-900">Penerbit</h3>
                 </div>
-                <p className="text-gray-700">{book.penerbit_buku || 'Tidak tersedia'}</p>
+                <p className="text-gray-700">{book.penerbit_buku || '-'}</p>
               </div>
 
               {/* Lokasi */}
@@ -105,7 +105,7 @@ const BookDetailPage = () => {
                   <Palette className="h-5 w-5 text-orange-600 mr-2" />
                   <h3 className="font-semibold text-orange-900">Ilustrator</h3>
                 </div>
-                <p className="text-gray-700">{book.ilustrator_buku || 'Tidak tersedia'}</p>
+                <p className="text-gray-700">{book.ilustrator_buku || '-'}</p>
               </div>
 
               {/* Jenis Buku */}
@@ -123,7 +123,7 @@ const BookDetailPage = () => {
                   <Barcode className="h-5 w-5 text-orange-600 mr-2" />
                   <h3 className="font-semibold text-orange-900">ISBN</h3>
                 </div>
-                <p className="text-gray-700 font-mono">{book.isbn || 'Tidak tersedia'}</p>
+                <p className="text-gray-700 font-mono">{book.isbn || '-'}</p>
               </div>
             </div>
           </div>

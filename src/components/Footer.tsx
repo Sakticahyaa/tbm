@@ -9,18 +9,20 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
-              <BookOpen className="h-8 w-8 text-amber-700" />
-              <span className="text-xl font-semibold text-amber-800">Taman Baca Masyarakat</span>
+              <div className='flex h-10'>
+              <img src='/img/tbmLogo.png' alt='logo tbm' className=''></img>
+            </div>
             </div>
             <p className="text-amber-700 leading-relaxed">
-              Platform digital untuk memetakan dan mendata koleksi buku di Taman Baca Masyarakat 
-              di Bugel, Sidorejo, Salatiga. Membantu masyarakat menemukan buku dan lokasi TBM terdekat.
+              Platform digital untuk memetakan dan mendata koleksi buku pada Taman Baca Masyarakat di Kelurahan Bugel, 
+              Kecamatan Sidorejo, Kota Salatiga. Platform ini juga berfungsi dalam membantu masyarakat menemukan buku dan 
+              lokasi TBM terdekat.
             </p>
           </div>
 
           {/* Social Media */}
           <div className="lg:col-span-1">
-            <h3 className="text-lg font-semibold text-amber-800 mb-4">Ikuti Kami</h3>
+            <h3 className="text-lg font-semibold text-A1-Forest mb-4">Ikuti Kami</h3>
             <a 
               href="https://www.instagram.com/kknsadakkinang/" 
               target="_blank"

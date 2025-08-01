@@ -61,7 +61,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
                     flex items-center space-x-3 px-3 py-2 rounded-lg transition-colors
                     ${isActive(item.path)
                       ? 'bg-A1-Forest text-white font-medium'
-                      : 'text-amber-700 hover:bg-A1-Forest hover:text-white'
+                      : 'text-amber-700 hover:bg-A1-Forest hover:bg-opacity-50 hover:text-white'
                     }
                   `}
                 >

@@ -142,10 +142,11 @@ const LandingPage = () => {
         {/* About Section */}
         <div id="about" className="relative py-20 pt-30 px-4 sm:px-6 lg:px-8 z-10">
           <div className="w-3/4 ml-[5%] text-left">
-            <div className="flex justify-center mb-8"></div>
-            <h2 className="bg-white px-2 justify-left text-3xl sm:text-4xl md:text-5xl font-semibold font-serif text-A1-Forest mb-8">
+            <div className="flex justify-left mt-12 mb-8">
+              <h2 className="bg-white px-2 text-3xl sm:text-4xl md:text-5xl font-semibold font-serif text-A1-Forest mb-8">
               Tingkatkan literasi Indonesia
             </h2>
+            </div>
             <p className="text-lg text-black leading-relaxed mx-auto">
               Taman Baca Masyarakat (TBM) di Kelurahan Bugel, Salatiga,
               merupakan salah satu bentuk inisiatif dalam meningkatkan literasi
