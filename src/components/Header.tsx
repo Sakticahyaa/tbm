@@ -17,6 +17,11 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
+  const handlePetaTBMClick = () => {
+    window.open('https://aurora34415.github.io/TamanBacaMasyarakat/#15/-7.3004/110.5014', '_blank');
+    setIsMenuOpen(false);
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-sm border-b border-A1-Forest shadow-grey-300 opacity-[80%]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -64,9 +69,12 @@ const Header = () => {
                 <Link to="/daftar-buku" className="text-amber-900 hover:text-A1-Forest transition-colors">
                   Daftar Buku
                 </Link>
-                <Link to="/peta-tbm" className="text-amber-900 hover:text-A1-Forest transition-colors">
+                <button 
+                  onClick={handlePetaTBMClick}
+                  className="text-amber-900 hover:text-A1-Forest transition-colors cursor-pointer"
+                >
                   Peta TBM
-                </Link>
+                </button>
               </>
             )}
           </nav>
@@ -127,13 +135,12 @@ const Header = () => {
                   >
                     Daftar Buku
                   </Link>
-                  <Link 
-                    to="/peta-tbm" 
-                    className="px-2 py-1 text-amber-900 hover:text-A1-Forest transition-colors"
-                    onClick={() => setIsMenuOpen(false)}
+                  <button 
+                    onClick={handlePetaTBMClick}
+                    className="text-left px-2 py-1 text-amber-900 hover:text-A1-Forest transition-colors"
                   >
                     Peta TBM
-                  </Link>
+                  </button>
                 </>
               )}
             </nav>
